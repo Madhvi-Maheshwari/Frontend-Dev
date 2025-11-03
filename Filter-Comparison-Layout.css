@@ -1,0 +1,93 @@
+ 
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      color: #0078d7;
+      margin-bottom: 30px;
+    }
+
+    /* ===== Container ===== */
+    .comparison {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+      transition: all 0.3s ease;
+    }
+
+    /* ===== Image Box ===== */
+    .image-box {
+      flex: 1 1 400px;
+      max-width: 500px;
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .image-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: filter 0.6s ease;
+    }
+
+    /* ===== Filtered Image ===== */
+    .filtered img {
+      filter: brightness(60%) contrast(130%);
+    }
+
+    .filtered:hover img {
+      filter: none;
+    }
+
+    /* ===== Captions ===== */
+    .caption {
+      padding: 12px;
+      background-color: #eef5ff;
+      font-weight: 600;
+      color: #004a99;
+    }
+
+    /* ===== Responsive: Stack Vertically Below 700px ===== */
+    @media (max-width: 700px) {
+      .comparison {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-box {
+        max-width: 90%;
+      }
+
+      .caption {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* ===== Fade-in Animation ===== */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }

@@ -1,0 +1,46 @@
+
+    /* ====== Global Styles ====== */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* ====== Section Styling ====== */
+    section {
+      text-align: center;
+      padding: 60px 20px;
+      margin: 50px auto;
+      max-width: 900px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ====== Responsive Font Sizes ====== */
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 3rem);
+      color: #0078d7;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ====== Adjust for Smaller Screens ====== */
+    @media (max-width: 700px) {
+      section {
+        padding: 40px 15px;
+      }
+
+      p {
+        line-height: 1.8;
+        letter-spacing: 0.3px;
+      }
+    }

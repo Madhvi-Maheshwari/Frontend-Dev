@@ -1,0 +1,84 @@
+
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      color: #0078d7;
+      margin-bottom: 40px;
+    }
+
+    /* ===== Grid Container ===== */
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* ===== Boxes ===== */
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      background: linear-gradient(135deg, #0078d7, #00b4d8);
+      color: white;
+      transform: translateY(-8px);
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .card code {
+      display: inline-block;
+      background-color: #eef3ff;
+      color: #0078d7;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    .card:hover code {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    /* ===== Responsive: Stack Vertically Below 600px ===== */
+    @media (max-width: 600px) {
+      .principles {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        text-align: left;
+        padding: 20px;
+      }
+
+      .card h2 {
+        font-size: 1.2rem;
+      }
+
+      .card p {
+        font-size: 0.95rem;
+      }
+    }

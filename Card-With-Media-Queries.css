@@ -1,0 +1,61 @@
+
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    /* ===== Card Container ===== */
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* ===== Individual Card ===== */
+    .card {
+      background-color: white;
+      flex: 1 1 calc(25% - 20px); /* 4 cards per row for desktop */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .card:hover {
+      background-color: #e0f0ff;
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #0078d7;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* ===== Tablet View (≤900px): 2 columns ===== */
+    @media (max-width: 900px) {
+      .card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    /* ===== Mobile View (≤600px): 1 column ===== */
+    @media (max-width: 600px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }

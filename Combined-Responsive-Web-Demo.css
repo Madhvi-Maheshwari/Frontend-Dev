@@ -1,0 +1,159 @@
+
+    /* ====== Global Styles ====== */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1, h2 {
+      color: #0078d7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ====== Header ====== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #0078d7;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #dfefff;
+    }
+
+    /* ====== Main Section ====== */
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    /* ====== Image Gallery ====== */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      filter: grayscale(100%);
+      transition: filter 0.5s ease, transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      filter: none;
+      transform: scale(1.05);
+    }
+
+    /* ====== Responsive Design Text Section ====== */
+    .text-section {
+      background-color: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .text-section:hover {
+      transform: translateY(-5px);
+    }
+
+    .text-section p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* ====== Cheat Sheet Preview ====== */
+    .cheat-sheet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .cheat-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .cheat-card:hover {
+      transform: scale(1.05);
+      background-color: #f0faff;
+    }
+
+    .cheat-card h3 {
+      color: #0078d7;
+      margin-bottom: 8px;
+    }
+
+    /* ====== Footer ====== */
+    footer {
+      background-color: #0078d7;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.95rem;
+      margin-top: 40px;
+    }
+
+    /* ====== Fade-In Animation ====== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ====== Responsive Layout for Small Screens ====== */
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .cheat-sheet {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
