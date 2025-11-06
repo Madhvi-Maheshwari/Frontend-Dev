@@ -1,0 +1,72 @@
+*{
+    box-sizing : border-box;
+
+}
+ /* .parent{
+    display:flex;
+    gap:10px;
+    padding:10px;
+} 
+ .box1{
+    background-color: blue;
+    color:white;
+    text-align:center;
+    padding:10px;
+    width:33%;
+}
+.box2{
+    background-color: rgb(133, 204, 100);
+    color:white;
+    text-align:center;
+    padding:10px;
+    width:33%;
+}
+.box3{
+    background-color: rgb(224, 38, 38);
+    color:white;
+    text-align:center;
+    padding:10px;
+    width:33%;
+}  */
+
+
+
+.parent{
+    width:100%;
+    display:flex;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+} 
+ img{
+    max-width:100%;
+    height:auto;
+}
+/* @media(max-width:700px){
+    body{
+        background-color: rgb(151, 219, 56);
+    }
+}
+
+
+@media(min-width:700px){
+    body{
+        background-color: rgb(28, 156, 152);
+    }
+} */
+
+
+@media(orientation:portrait){
+    body{
+        background-color: rgb(151, 219, 56);
+    }
+}
+@media(orientation: landscape){
+    body{
+        background-color: rgb(17, 106, 116);
+    }
+}
+
+
+
+

@@ -1,0 +1,40 @@
+*{
+    /* relative : parent ke according change hota h  */
+    /* absolute : screen ke according */
+    /* sticky: stick ho jata h  */
+    /* parent-relative , child - absolute (in between parent) */
+    /* media query */
+    /* fixed */
+}
+.container{
+    width:800px;
+    height:10000px;
+    background-color: azure;
+    border:2px solid black;
+    margin:0 auto;
+     box-sizing:border-box;
+}
+.box1{
+    height:200px;
+    width:100px;
+    border:2px solid rgb(151, 41, 41);
+    position:sticky;
+    bottom:0px;
+    right:0px;
+    padding:10px;
+      /* box-sizing:border-box; */
+}
+.box2{
+    height:200px;
+    width:100px;
+    border:2px solid rgb(42, 123, 173);
+  padding:10px;
+       box-sizing:border-box;
+}
+.box3{
+    height:200px;
+    width:100px;
+    border:2px solid rgb(35, 138, 49);
+ padding:10px;
+      box-sizing:border-box;
+}
