@@ -11,7 +11,7 @@
 - Concepts: Localhost, Ports, and Rendering pages via IP address  
 
 *Task1:*  
-Create a timetable using the <table> tag and view it in Live Server.
+Create a timetable using the table tag and view it in Live Server.
 
 ---
 
